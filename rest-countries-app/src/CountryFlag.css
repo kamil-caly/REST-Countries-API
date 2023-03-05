@@ -1,0 +1,23 @@
+.minFlag {
+  width: 320px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 7px 7px 0 0;
+}
+
+.countryInfo {
+  margin: 20px;
+}
+
+.countryCard {
+  background-color: var(--elements-color);
+  width: 320px;
+  margin: 30px 0;
+  height: 340px;
+  border-radius: 7px;
+}
+
+.countryCard:hover {
+  cursor: pointer;
+}

@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif; /* Weights: 300, 600, 800 */
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px */
+
+/* - Homepage Items: 14px
+- Detail Page: 16px  */
+
+:root {
+  --dark_blue: hsl(209, 23%, 22%); /* Dark Modes Elements */
+  --very_dark_blue: hsl(207, 26%, 17%); /* Dark Mode Background */
+  --very_dark_blue_2: hsl(200, 15%, 8%); /* Light Mode Text */
+  --dark_gray: hsl(0, 0%, 52%); /* Light Mode Input */
+  --very_light_gray: hsl(0, 0%, 93%); /* Light Mode Background */
+  --white: hsl(0, 0%, 100%); /* Dark Mode Text & Light Mode Elements */
+}
+
+.light {
+  --input-color: var(--white);
+  --elements-color: var(--white);
+  --color: var(--very_dark_blue_2);
+  --background-color: var(--very_light_gray);
+}
+
+.dark {
+  --input-color: var(--dark_blue);
+  --elements-color: var(--dark_blue);
+  --color: var(--white);
+  --background-color: var(--very_dark_blue);
+}
+
+html body {
+  background-color: var(--background-color);
+  color: var(--color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+input {
+  background-color: var(--input-color);
+}
+
+.search {
+  background-color: var(--input-color);
+  display: flex;
+  justify-content: space-around;
+  width: 500px;
+  height: 60px;
+  border-radius: 7px;
+}
+
+.selectInput {
+  background-color: var(--input-color);
+  height: 60px;
+  width: 200px;
+  border-radius: 7px;
+  border: none;
+  color: var(--color);
+}
+
+.searchInput {
+  width: 430px;
+  border: none;
+  color: var(--color);
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--color);
+  opacity: 1; /* Firefox */
+}
+
+.glassSpan {
+  width: 60px;
+}
+
+.inputs {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.flag {
+  background-color: var(--elements-color);
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  fill: var(--color);
+  cursor: pointer;
+}
+
+.header {
+  background-color: var(--elements-color);
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.mode-switch {
+  display: flex;
+}
+
+.CountriesList {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 0 40px;
+  margin-left: 100px;
+}
